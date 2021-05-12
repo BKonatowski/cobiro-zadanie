@@ -1,0 +1,8 @@
+<section class="container">
+  <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <input type="email" autocomplete="off" formControlName="email">
+    <span *ngIf="">Błędny email</span>
+    <input type="password" autocomplete="off" formControlName="password">
+    <button type="submit">Zaloguj</button>
+  </form>
+</section>
